@@ -5,12 +5,6 @@ sudo apt-get update
 # Redis, NodeJS
 apt-get install -y redis-server #nodejs
 
-# Dradis
-# wget http://sourceforge.net/projects/dradis/files/dradis/v3.1/dradis-3.1.0.rc2-linux-x86_64.tar.gz
-# tar -xzf dradis-3.1.0.rc2-linux-x86_64.tar.gz
-# cd dradis-3.1.0.rc2-linux-x86_64/
-# ./dradis-webapp  && ./dradis-worker
-
 # Install Ruby 2.2.2
 sudo apt-get purge -y ruby1.9.1
 
