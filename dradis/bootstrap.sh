@@ -29,6 +29,7 @@ sudo gem install ruby-nmap
 # Build Dradis from git
 cd
 sudo apt-get install -y git
+# Clone Dradis
 git clone https://github.com/dradis/dradis-ce.git
 # Clone the rest
 git clone https://github.com/dradis/dradis-plugins.git
@@ -36,6 +37,7 @@ git clone https://github.com/dradis/dradis-projects.git
 cd dradis-ce/
 bundle install
 ./bin/setup
+
 # Run dradis
 bundle exec rails server -b 0.0.0.0
 
