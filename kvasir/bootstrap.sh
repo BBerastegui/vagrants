@@ -49,8 +49,7 @@ sudo ln -s /opt/Kvasir kvasir
 # Run server
 cd /opt/web2py
 # Create one user for Kvasir
-python web2py.py -R applications/kvasir/private/user.py -S kvasir -M -A -u $kvasir_USERNAME -p $kvasir_PASSWORD
+python web2py.py -R /opt/web2py/applications/kvasir/private/user.py -S kvasir -M -A -u $kvasir_USERNAME -p $kvasir_PASSWORD
 
 python web2py.py -K kvasir &
 sudo python web2py.py -c ~/server.crt -k ~/server.key -p 8443 -i 0.0.0.0 --minthreads=40 -a $web2py_PASS
-
