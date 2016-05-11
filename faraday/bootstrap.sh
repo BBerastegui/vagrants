@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-alias errecho='>&2 echo'
 eth0ip=$(ifconfig eth0 | grep "inet addr" | cut -d ':' -f 2 | cut -d ' ' -f 1)
 
 sudo apt-get update && sudo apt-get install -y git
